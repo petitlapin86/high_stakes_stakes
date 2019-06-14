@@ -30,6 +30,16 @@ in the instructions for running the code
 # maybe index number equals == horse number
 #maybe make key/value pairs with odds of horse to win
 
+horses = ['seattle slew',
+          'zenyata',
+          'Black Caviar',
+          'Sea Biscuit',
+          'Man o War',
+          'Secretariat',
+          'Phar Lap']
+
+
+
 #input and output
 #-----------------------------------------------------------
 #tell user the name of race and horses running
