@@ -36,6 +36,10 @@ horses = ['Seattle Slew',
           'Man o War',
           'Secretariat',
           'Phar Lap']
+#I think i can probably comine this and horses into a dictionary?
+#these odds are wrong just getting something written down
+horse_odds = ['3/7', '2/7', '6/7', '1/7', '4/7', '7/7', '5/7']
+
 
 #input and output
 #-----------------------------------------------------------
@@ -47,16 +51,16 @@ print(f"The the Horses in todays race are: {horses}")
 wallet = 100
 
 #offer more information on horse odds y/n
-answer = input("Would you like to see horse odds? y/n: ")
+answer = input("Would you like to see horse odds? y/n: ".lower())
 if answer == 'y' or 'yes':
-    print('print horse odds here')
+    print(f'{horse_odds}')  # if yes display horse odds
 elif answer == 'n' or 'no':   #FOR SOME REASON ONLY IF BLOCK IS WORKING HERE
     print('Risky!, okay lets bet.')
 else:
     print("please enter y or n.")
 
 
-# if yes display horse odds
+
 # ask user which type of bet they would like to make (1, 1,2 or 1,2,3)
 # ask user which horses they want to bet on
 # bet placing - ask user how much they would like to bet
