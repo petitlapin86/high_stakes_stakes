@@ -29,22 +29,33 @@ in the instructions for running the code
 # a collection of horses
 # maybe index number equals == horse number
 #maybe make key/value pairs with odds of horse to win
-
-horses = ['seattle slew',
-          'zenyata',
+horses = ['Seattle Slew',
+          'Zenyata',
           'Black Caviar',
           'Sea Biscuit',
           'Man o War',
           'Secretariat',
           'Phar Lap']
 
-
-
 #input and output
 #-----------------------------------------------------------
 #tell user the name of race and horses running
+print("Welcome to High Stakes Stakes!")
+print(f"The the Horses in todays race are: {horses}")
+
 #display wallet (start with $100)
+wallet = 100
+
 #offer more information on horse odds y/n
+answer = input("Would you like to see horse odds? y/n: ")
+if answer == 'y' or 'yes':
+    print('print horse odds here')
+elif answer == 'n' or 'no':   #FOR SOME REASON ONLY IF BLOCK IS WORKING HERE
+    print('Risky!, okay lets bet.')
+else:
+    print("please enter y or n.")
+
+
 # if yes display horse odds
 # ask user which type of bet they would like to make (1, 1,2 or 1,2,3)
 # ask user which horses they want to bet on
