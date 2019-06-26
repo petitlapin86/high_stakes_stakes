@@ -29,23 +29,20 @@ in the instructions for running the code
 # a collection of horses
 # maybe index number equals == horse number
 #maybe make key/value pairs with odds of horse to win
-horses = ['Seattle Slew',
-          'Zenyata',
-          'Black Caviar',
-          'Sea Biscuit',
-          'Man o War',
-          'Secretariat',
-          'Phar Lap']
-#I think i can probably comine this and horses into a dictionary?
+horses =  {'Seattle Slew': '2/7',
+          'Zenyata': '6/7',
+          'Black Caviar': '3/7',
+          'Sea Biscuit': '4/7',
+          'Man o War': '1/7',
+          'Secretariat': '7/7',
+          'Phar Lap': '5/7'}
 #these odds are wrong just getting something written down
-horse_odds = ['3/7', '2/7', '6/7', '1/7', '4/7', '7/7', '5/7']
-
 
 #input and output
 #-----------------------------------------------------------
 #tell user the name of race and horses running
 print("Welcome to High Stakes Stakes!")
-print(f"The the Horses in todays race are: {horses}")
+print(f"The the Horses in todays race are: {horses.keys()}")
 
 #display wallet (start with $100)
 wallet = 100
@@ -53,7 +50,7 @@ wallet = 100
 #offer more information on horse odds y/n
 answer = input("Would you like to see horse odds? y/n: ".lower())
 if answer == 'y' or 'yes':
-    print(f'{horse_odds}')  # if yes display horse odds
+    print(f'{horses}')  # if yes display horse odds
 elif answer == 'n' or 'no':   #FOR SOME REASON ONLY IF BLOCK IS WORKING HERE
     print('Risky!, okay lets bet.')
 else:
