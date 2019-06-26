@@ -13,6 +13,7 @@ horses_list = list(horse_odds.items())  #turn dict into list
 print("******************************")
 numpy.random.shuffle(horses_list) #shuffle list   #YAY THIS WORKS!
 print(horses_list)
+
 print("******************************")
 horses_dict = dict(horses_list)  #getting shuffled dictionary  #WONDER IF I NEED TO CHANGE BACK TO DICT AT ALL?
 print(horses_dict)
