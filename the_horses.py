@@ -23,7 +23,7 @@ print("_"*25)  #dividing line
 ##################################################################
 
 #HORSES MORE INFO
-while True:  #ask for a new id infinitly
+while True:  #ask for a new saddle number infinitly
     saddle_number = int(input("Enter a horses saddle number for more information: "))
     print("When ready to go back to game type 0")
 
@@ -31,19 +31,19 @@ while True:  #ask for a new id infinitly
         print("Enter a saddle number between 0 and 7")
 
     elif saddle_number == 1:
-        print("ill tell you about the horse here")
+        print("1st horse info goes here ")
     elif saddle_number == 2:
-        print("horsey 1")
+        print("2nd horse info goes here ")
     elif saddle_number == 3:
-        print("blah blah")
+        print("3rd horse info goes here ")
     elif saddle_number == 4:
-        print("info goes here")
+        print("4th horse info goes here ")
     elif saddle_number == 5:
-        print("filler text")
+        print("5th horse info goes here ")
     elif saddle_number == 6:
-        print("etc etc etc")
+        print("6th horse info goes here ")
     elif saddle_number == 7:
         print("last horse here")
     elif saddle_number == 0:
-        print("Goodbye")
+        print("Goodbye")  #HERE I NEED TO ACTUALLY SEND BACK TO MAIN MENU : )
         break

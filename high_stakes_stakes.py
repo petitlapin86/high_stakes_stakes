@@ -18,46 +18,39 @@ provide unit tests that prove your class methods work as expected. the tests sho
 the assert statements.
 
 if you desire to include a module that is not part of the standard python build you must first
-get permission from the favilitator.
+get permission from the facilitator.
 
 when submitting your project the instructions for installing the module must be included
 in the instructions for running the code
 """
 
+import the_horses  #import horses.py
+import the_odds
 #spec out ideas for project
 
-# a collection of horses
-# maybe index number equals == horse number
-#maybe make key/value pairs with odds of horse to win
-horses =  {'Seattle Slew': '2/7',
-          'Zenyata': '6/7',
-          'Black Caviar': '3/7',
-          'Sea Biscuit': '4/7',
-          'Man o War': '1/7',
-          'Secretariat': '7/7',
-          'Phar Lap': '5/7'}
-#these odds are wrong just getting something written down
-
-#input and output
+#INTRO
 #-----------------------------------------------------------
 #tell user the name of race and horses running
 print("Welcome to High Stakes Stakes!")
-print(f"The the Horses in todays race are: {horses.keys()}")
+print(f"The the Horses in todays race are: {horses}")  #WHY IS IT RUNNING HORSES BEFORE PRINTING THESE TWO LINE?
 
-#display wallet (start with $100)
-wallet = 100
+
+#WALLET
+#------------------------------------------------------------
+wallet = 100  #display wallet (start with $100)
+
 
 #offer more information on horse odds y/n
-answer = input("Would you like to see horse odds? y/n: ".lower())
+answer = input("Would you like to see horse current odds to win? y/n: ".lower())
 if answer == 'y' or 'yes':
-    print(f'{horses}')  # if yes display horse odds
+    print(f'{horse_odds}')  # if yes display horse odds
 elif answer == 'n' or 'no':   #FOR SOME REASON ONLY IF BLOCK IS WORKING HERE
     print('Risky!, okay lets bet.')
 else:
     print("please enter y or n.")
 
-
-
+#BETTING
+#--------------------------------------------------------------
 # ask user which type of bet they would like to make (1, 1,2 or 1,2,3)
 # ask user which horses they want to bet on
 # bet placing - ask user how much they would like to bet
@@ -66,7 +59,7 @@ else:
 #display race results
 #display wallet with winnings or losings calculated
 
-#Algorithms
+#ALGORITHMS
 #--------------------------------------------------------------
 # program that calculates wallet with winnings or losings and creates new total
 # program that randomly selects winners of horses for three different types of bets
