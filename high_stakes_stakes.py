@@ -24,16 +24,16 @@ when submitting your project the instructions for installing the module must be 
 in the instructions for running the code
 """
 
-import the_horses  #import horses.py
-import the_odds
+from horses import Horses  #import horses.py
+from odds import Odds  #import odds.py
 #spec out ideas for project
 
 #INTRO
 #-----------------------------------------------------------
 #tell user the name of race and horses running
 print("Welcome to High Stakes Stakes!")
-print(f"The the Horses in todays race are: {horses}")  #WHY IS IT RUNNING HORSES BEFORE PRINTING THESE TWO LINE?
-
+print(f"The the Horses in todays race are: ")
+Horses.print_horse_info()
 
 #WALLET
 #------------------------------------------------------------
@@ -43,7 +43,7 @@ wallet = 100  #display wallet (start with $100)
 #offer more information on horse odds y/n
 answer = input("Would you like to see horse current odds to win? y/n: ".lower())
 if answer == 'y' or 'yes':
-    print(f'{horse_odds}')  # if yes display horse odds
+    print(f'{Odds.print_odds_info()}')  # if yes display horse odds
 elif answer == 'n' or 'no':   #FOR SOME REASON ONLY IF BLOCK IS WORKING HERE
     print('Risky!, okay lets bet.')
 else:
