@@ -26,6 +26,7 @@ in the instructions for running the code
 
 from horses import Horses  #import horses.py
 from odds import Odds  #import odds.py
+from wallet import Wallet
 #spec out ideas for project
 
 #INTRO
@@ -51,7 +52,10 @@ else:
 print("In Horse Races there are three major types of bets: \n Win (1st), Exacta (1st and 2nd) and Trifecta (1st, 2nd and 3rd)")
 type_of_bet = input("Enter 1, 2 or 3 for the type of bet you'd like to make: ")  # ask user which type of bet they would like to make (1, 1,2 or 1,2,3)
 
+#create a wallet object that will track the winnings and losings
+user_wallet = Wallet(100)
 horses_to_win = input("Now enter the saddle number for the horse or horses you'd like to bet on: ")  # ask user which horses they want to bet on
+
 
 amount = input("Lastly enter a numberical amount of dollars you'd like to place on this bet: ")
 # bet placing - ask user how much they would like to bet

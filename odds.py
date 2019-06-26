@@ -1,6 +1,7 @@
 import numpy
 
 class Odds:
+    @staticmethod
     def print_odds_info():
         horse_odds =  {'1':'Seattle Slew',  #this is my use of a dictionary
                '2':'Zenyata',
