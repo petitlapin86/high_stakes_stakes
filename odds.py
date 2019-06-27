@@ -3,6 +3,7 @@ import numpy
 class Odds:
     @staticmethod
     def print_odds_info():
+
         horse_odds =  {'1':'Seattle Slew',  #this is my use of a dictionary
                '2':'Zenyata',
                '3':'Black Caviar',
@@ -11,15 +12,20 @@ class Odds:
                '6':'Secretariat',
                '7':'Phar Lap'}
 
-        print("Here are the current horse odds to win: ")
+        print("\33[30m Here are the current horse odds to win: ")
+        print('\33[30m''_'*35)  #dividing line
         horses_list = list(horse_odds.items())  #turn dict into list
-        print("_" * 50)
         numpy.random.shuffle(horses_list) #shuffle list   #YAY THIS WORKS!
-        print(horses_list)
+        horses_dict = dict(horses_list)  #turning into shuffled dictionary  #WONDER IF I NEED TO CHANGE BACK TO DICT AT ALL?
 
-        print("_" * 50)
-        horses_dict = dict(horses_list)  #getting shuffled dictionary  #WONDER IF I NEED TO CHANGE BACK TO DICT AT ALL?
-        print(horses_dict)
+        print()  #default new line
+        print("Odds".center(10), end='')  # header
+        print("Horse".ljust(10), end='\n')
 
+        for saddle, horse in horses_dict.items():  #iterate through dict
+            print(saddle.center(10), end='')  #print each item in dict
+            print(horse.ljust(10), end='\n')  #new line after each horse
 
-#Odds.print_odds_info()
+        print("_"*35)  #dividing line
+
+#Odds.print_odds_info()  #for test purposes
