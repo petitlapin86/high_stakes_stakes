@@ -45,29 +45,36 @@ if answer == 'y' or 'yes':
     print(f'{Odds.print_odds_info()}')  # if yes display horse odds from odds.py
 elif answer == 'n' or 'no':   #FOR SOME REASON ONLY IF BLOCK IS WORKING HERE
     print('Risky!, okay lets bet.')
-else:
+else:  #FOR SOME REASON ONLY IF BLOCK IS WORKING HERE
     print("please enter y or n.")
 
 #BETTING
 #--------------------------------------------------------------
-print("In Horse Races there are three major types of bets: \n Win (1st), Exacta (1st and 2nd) and Trifecta (1st, 2nd and 3rd)")
-type_of_bet = input("Enter 1, 2 or 3 for the type of bet you'd like to make: ")  # ask user which type of bet they would like to make (1, 1,2 or 1,2,3)
-
-#create a wallet object that will track the winnings and losings
-user_wallet = Wallet(100)
-horses_to_win = input("Now enter the saddle number for the horse or horses you'd like to bet on: ")  # ask user which horses they want to bet on
+print(" In Horse Races there are three major types of bets: \n Win (1st)\n Exacta (1st and 2nd)\n Trifecta (1st, 2nd and 3rd)")
+type_of_bet = input(" Enter 1, 2 or 3 for the type of bet you'd like to make: ")  # ask user which type of bet they would like to make (1, 1,2 or 1,2,3)
 
 
-amount = input("Lastly enter a numberical amount of dollars you'd like to place on this bet: ")
-# bet placing - ask user how much they would like to bet
-print(f"To confirm you would like to make a {type_of_bet} bet, on horse(s) {horses_to_win}, with ${amount}")#confirm total bet (type_of_bet, horses_to_win, bet_amount)
+user_wallet = Wallet(100)  #create a wallet object that will track the winnings and losings
+horses_to_win = input(" Now enter the saddle number for the horse or horses you'd like to bet on: ")  # ask user which horses they want to bet on
+
+
+amount = input(" Lastly enter a numberical amount of dollars you'd like to place on this bet: ")  # bet placing - ask user how much they would like to bet
+
+print(f" To confirm you would like to make a {type_of_bet} bet, on horse(s) {horses_to_win}, with ${amount}")#confirm total bet (type_of_bet, horses_to_win, bet_amount)
 
 #if yes, run program
 #display race results
 #display wallet with winnings or losings calculated
+win = True  #temporary place holder
+if win:
+    print(" CONGRATULATIONS!, YOU WON!")
+else:
+    print(" Better luck next time, YOU LOST")
+
+print(f" You have ${user_wallet} in your Wallet.")
 
 #ALGORITHMS
 #--------------------------------------------------------------
 # program that calculates wallet with winnings or losings and creates new total
 # program that randomly selects winners of horses for three different types of bets
-# program that compares winners wirh users bet horses_to_win
+# program that compares winners with users bet horses_to_win

@@ -1,4 +1,4 @@
-class Color:
+'''class Color:
    PURPLE = '\033[95m'
    CYAN = '\033[96m'
    DARKCYAN = '\033[36m'
@@ -16,3 +16,4 @@ print(Color.PURPLE + 'Hello World !')
 print('\033[94m second version !')
 print('\033[1m third version !')
 print(f"my name is{name}"(Color.BOLD))
+'''

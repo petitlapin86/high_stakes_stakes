@@ -1,6 +1,6 @@
 import numpy
 
-class Odds:
+class Odds:  #this class shuffles the horse list to create random odds
     @staticmethod
     def print_odds_info():
 
