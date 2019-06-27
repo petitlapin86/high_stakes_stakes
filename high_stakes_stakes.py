@@ -32,8 +32,9 @@ from wallet import Wallet
 #INTRO
 #-----------------------------------------------------------
 #tell user the name of race and horses running
-print("Welcome to High Stakes Stakes!")
-print(f"The the Horses in todays race are: ")
+print('\33[30m''_'*35)  #dividing line
+print("\33[30m \n Welcome to High Stakes Stakes!")
+print("\33[30m The the Horses in todays race are: ")
 Horses.print_horse_info()  #call Horses class from horses.py
 
 #ODDS
