@@ -15,23 +15,35 @@ class Race:  #this class shuffles the horse list to create random winners
 
         print("\33[30m Here are the race results: ")
         print('\33[30m''_'*35)  #dividing line
-        horses_list = list(horses.items())  #turn dict into list
+        horses_list = list(horses.keys())  #turn dict into list
         numpy.random.shuffle(horses_list) #shuffle list   #YAY THIS WORKS!
-        winners_dict = dict(horses_list)  #turning into shuffled dictionary  #WONDER IF I NEED TO CHANGE BACK TO DICT AT ALL?
+
+        #winners_dict = dict(horses_list)  #turning into shuffled dictionary  #WONDER IF I NEED TO CHANGE BACK TO DICT AT ALL?
 
         print()  #default new line
         print("Saddle".center(10), end='')  # header
         print("Horse".ljust(10), end='\n')
 
-        for saddle, horse in winners_dict.items():  #iterate through dict
+        for saddle in horses_list:  #iterate through dict
             print(saddle.center(10), end='')  #print each item in dict
-            print(horse.ljust(10), end='\n')  #new line after each horse
+            print(horses[saddle].ljust(10), end='\n')  #new line after each horse
 
             print("_"*35)  #dividing line
 
-        if winners_dict == horses_to_win:
+        hasWon = True
+        for i in range(len(horses_to_win)):
+            print(horses_list[i])
+            print(horses_to_win[i])
+            if horses_to_win[i] != horses_list[i]:
+                hasWon = False
+                print(hasWon)
+                break
+
+        if hasWon:
                 print(" CONGRATULATIONS!, YOU WON!")
         else:
                 print("better luck next time")
 
-Race.horse_race(2)  #for test purposes
+        return hasWon
+
+Race.horse_race(['7', '2'])  #for test purposes

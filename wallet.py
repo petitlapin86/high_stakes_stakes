@@ -41,7 +41,15 @@ class Wallet:
         except ValueError as e:
             print("You are out of money. ")#+repr(e) , include this if you want to print line 31
 
-    def __repr__():
+    def __repr__(self):
         #you can create your custom string
-        wallet_string = "This is your wallet"
+        wallet_string = "Your current wallet amount is %d"%self.__wallet
         return wallet_string
+
+#test code
+my_wallet = Wallet(100)
+#print(my_wallet)
+#my_wallet.win(50)
+#print(my_wallet)
+#my_wallet.lose(100)
+#print(my_wallet)
