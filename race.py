@@ -42,8 +42,8 @@ class Race:  #this class shuffles the horse list to create random winners
         if hasWon:
                 print(" CONGRATULATIONS!, YOU WON!")
         else:
-                print("better luck next time")
+                print("Better luck next time")
 
         return hasWon
 
-Race.horse_race(['7', '2'])  #for test purposes
+#Race.horse_race(['7', '2'])  #for test purposes
