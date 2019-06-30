@@ -1,5 +1,5 @@
 
-#Wallet Class keeps provides money to bet with and tracks winnings/losses 
+#Wallet Class keeps provides money to bet with and tracks winnings/losses
 class Wallet:
     def __init__(self,wallet):  #__init__ method with private __wallet
             self.__wallet = wallet
@@ -25,7 +25,7 @@ class Wallet:
         self.__check_money_in_wallet()  #check amount in wallet
 
     def __repr__(self):
-        wallet_string = "Your current wallet amount is %d"%self.__wallet  #display wallet amount
+        wallet_string = " Your current wallet amount is: \033[94m %d \n"%self.__wallet  #display wallet amount
         return wallet_string
 
 #test code
