@@ -21,20 +21,19 @@ class Race:  #this class shuffles the horse list to create random winners
         print()  #default new line
         print("Saddle".center(10), end='')  # header
         print("Horse".ljust(10), end='\n')
+        print("_"*35)
 
-        for saddle in horses_list:  #iterate through dict
+        num_of_horses = len(horses_to_win)
+
+        for saddle in horses_list[0:num_of_horses]:  #iterate through dict
             print(saddle.center(10), end='')  #print each item in dict
             print(horses[saddle].ljust(10), end='\n')  #new line after each horse
-
             print("_"*35)  #dividing line
 
         hasWon = True
-        for i in range(len(horses_to_win)):
-            print(horses_list[i])
-            print(horses_to_win[i])
+        for i in range(num_of_horses):
             if horses_to_win[i] != horses_list[i]:
                 hasWon = False
-                print(hasWon)
                 break
 
         if hasWon:
