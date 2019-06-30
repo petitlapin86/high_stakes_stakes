@@ -1,10 +1,17 @@
 How to Run:
+
+To Play Game:
+install numpy
 in terminal cd into high_stakes_stakes
 in terminal type python3 high_stakes_stakes.py
 
+To run tests:
+install unittest
+in terminal type python3 -m unittest tests.py
+
+
 Created June 2019 by Author Paige Jones
 for Boston University Masters Class Information Structures with Python
-
 
 For my final project I created a CLI game called High Stakes Stakes.
 I came up with the idea for this game because of my love for the triple crown horse races. I thought it would be a good opportunity to learn how to implement a Wallet feature along with betting. The concept of the game is to guess which horses will win the race and place bets on those horses.

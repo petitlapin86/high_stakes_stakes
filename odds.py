@@ -12,14 +12,14 @@ class Odds:  #this class shuffles the horse list to create random odds
                '6':'Secretariat',
                '7':'Phar Lap'}
 
-        print("\33[30m Here are the current horse odds to win: ")
+        print("\33[30m\n Here are the horses sorted by current odds to win: ")
         print('\33[30m''_'*35)  #dividing line
         horses_list = list(horse_odds.items())  #turn dict into list
         numpy.random.shuffle(horses_list) #shuffle list   #YAY THIS WORKS!
         horses_dict = dict(horses_list)  #turning into shuffled dictionary  #WONDER IF I NEED TO CHANGE BACK TO DICT AT ALL?
 
         print()  #default new line
-        print("Odds".center(10), end='')  # header
+        print("Saddle".center(10), end='')  # header
         print("Horse".ljust(10), end='\n')
 
         for saddle, horse in horses_dict.items():  #iterate through dict

@@ -17,6 +17,3 @@ class WalletTestCase(TestCase):
     def test_lose(self):
         self.test_wallet.lose(50)
         self.assertEqual(50, self.test_wallet.get_wallet())
-
-    def test_repr(self):
-        self.assertEqual("Your current wallet amount is 100", repr(self.test_wallet))
