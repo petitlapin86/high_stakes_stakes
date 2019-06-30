@@ -51,8 +51,3 @@ class Horses:
                 break   #Send back to main menu
 
 #Horses.print_horse_info()  Just for testing purposes
-
-
-#####notes to self:
-#format horse info to print prettier
-#format headings and input in bold

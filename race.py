@@ -16,9 +16,7 @@ class Race:  #this class shuffles the horse list to create random winners
         print("\33[30m Here are the race results: ")
         print('\33[30m''_'*35)  #dividing line
         horses_list = list(horses.keys())  #turn dict into list
-        numpy.random.shuffle(horses_list) #shuffle list   #YAY THIS WORKS!
-
-        #winners_dict = dict(horses_list)  #turning into shuffled dictionary  #WONDER IF I NEED TO CHANGE BACK TO DICT AT ALL?
+        numpy.random.shuffle(horses_list) #shuffle list
 
         print()  #default new line
         print("Saddle".center(10), end='')  # header
@@ -40,7 +38,7 @@ class Race:  #this class shuffles the horse list to create random winners
                 break
 
         if hasWon:
-                print(" CONGRATULATIONS!, YOU WON!")
+                print("CONGRATULATIONS!, YOU WON!")
         else:
                 print("Better luck next time")
 
