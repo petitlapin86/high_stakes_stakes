@@ -16,7 +16,7 @@ class Horses:
         print()  #default new line
         print("Saddle".center(10), end='')  # header
         print("Horse".ljust(10), end='\n')
-
+        print("_"*35)  #dividing line
         for saddle, horse in horses.items():  #iterate through dict
             print(saddle.center(10), end='')  #print each item in dict
             print(horse.ljust(10), end='\n')
